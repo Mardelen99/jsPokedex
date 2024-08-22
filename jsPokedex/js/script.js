@@ -1,5 +1,1 @@
-alert('Hello world');
-console.log(alert);
-let favoriteFood = "Mango";
-document.write(favoriteFood);
-let man = "4" ;
+let pokemonList = [{name: "Bulbasaur", height: 7 , type: ["grass" ,"poison"]},{name: "Pikachu", height: 4, type:["electric","flying"]},{name: "Squirtle", height: 5 , type:["fire","ice"]}];
