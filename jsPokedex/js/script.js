@@ -25,11 +25,11 @@
             add: add
         };
     })();
-    
-     for (let i=0; i < pokemonList.length; i++) {
-       if (pokemonList[i].height <6 && pokemonList[i].height>0){
-       document.write(" "+ pokemonList[i].name + " (height: "+ pokemonList[i].height + ")")}
-        else if (pokemonList[i].height > 6) {
-            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height +")"+ " - Wow, that's big! ");
-       }
-   } 
+
+   pokemonRepository.getAll().forEach(function(pokemon) {
+    if (pokemon.height < 6 && pokemon.height > 0) {
+        document.write(" " + pokemon.name + " (height: " + pokemon.height + ")");
+    } else if (pokemon.height > 6) {
+        document.write(pokemon.name + " (height: " + pokemon.height + ") - Wow, that's big! ");
+    }
+});
